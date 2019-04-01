@@ -6,7 +6,7 @@ import android.util.Log
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 
-class AutoInstallService : AccessibilityService() {
+class InstallService : AccessibilityService() {
     private val mHandler = Handler()
 
     override fun onServiceConnected() {
@@ -68,7 +68,7 @@ class AutoInstallService : AccessibilityService() {
     override fun onInterrupt() {}
 
     companion object {
-        private val TAG = AutoInstallService::class.java.simpleName
+        private val TAG = InstallService::class.java.simpleName
         private val DELAY_PAGE = 320
     }
 
